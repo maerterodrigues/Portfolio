@@ -1,0 +1,453 @@
+
+/* Definição global da página principal e de referências ("Mobile-First", utilizando "min-width" de 640px como base) */
+
+/* DEFINIÇÕES DA PÁGINA PRINCIPAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bodyMain {
+  background-color: #FFF3E6;
+  overflow: auto; 
+}
+.introBox {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 4px;
+  margin-top: 73px;
+  margin-bottom: 105px;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  border-radius: 4px;
+}
+.introTitulo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+.introImagem {
+  width: 100%;
+  border-radius: 4px;
+}
+.introTexto {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 1.28px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.5px;
+}
+.introTexto2 {
+  text-align: left;
+  margin-top: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.5px;
+}
+span {
+  margin-top: 10px;
+  margin-right: 15px;
+  float: right;
+  font-size: 23px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.tituloPortfolio {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.imagem {
+  cursor: pointer;
+  width: 91%;
+  margin: 15px;
+  border-radius: 4px;
+}
+/* Definição da aparência e tamanho do plano em foco da imagem, incluindo a sua alinhação */
+.foco {
+  cursor: pointer;
+  display: none;  
+  position: fixed;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 80px;
+  z-index: 1;
+  overflow: auto;
+  color: white;
+  background-color: rgba(0,0, 0, 0.8);
+}
+/* Tamanho da imagem em foco */
+.focoImg {
+  cursor: default;
+  margin: auto;
+  width: 95%;
+ }
+
+/* DEFINIÇÕES DA SEÇÃO DE CRÉDITOS E CONTATO */
+
+.subTitulo {
+  margin-top: 52px;
+  margin-bottom: 19px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.subTitulo2 {
+  margin-bottom: 19px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.subTexto {
+  margin-bottom: 19px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+}
+li {
+  list-style: none;
+}
+.footerFundo {
+  margin-top: 49px;
+  height: 120px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #FAEEE1;
+}
+.footerTexto {
+  text-align: center;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 15px;
+  color: #A6968D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.footerTexto2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 11px;
+  color: #A6968D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+.footerTexto a {
+  color: #A6968D;
+}
+em {
+  color: #A3948B;
+}
+
+
+
+/* Várias definições especificas para diferentes tamanhos de tela abaixo. */
+
+/* Smartphones (Horizontal) */
+@media screen and (min-device-width: 640px) and (orientation: landscape){
+  
+  .introTitulo {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+  .introImagem {
+    margin-left: 50px;
+    width: 64%;
+  }
+  .introTexto {
+    text-align: left;
+    margin-right: 42px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+  }
+  .introTexto2 {
+    font-size: 17px;
+    margin-top: 12px;
+    margin-left: 50px;
+    margin-right: 22px;
+  }
+  span {
+    font-size: 28px;
+  }
+  .imagem {
+    width: 70%;
+  }
+  .focoImg {
+    width: 73%;
+  }
+  .subTexto {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-device-width: 768px){
+
+  .introBox {
+    margin-top: 170px;
+    margin-bottom: 210px;
+  }
+  .introTitulo {
+    font-size: 63px;
+    margin-bottom: 15px;
+  }
+  .introImagem {
+    width: 90%;
+    margin-left: 8px;
+  }
+  .introTexto {
+    font-size: 24px;
+    margin-right: 4px;
+  }
+  .introTexto2 {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+  span {
+    font-size: 39px;
+    margin-top: 17px;
+    margin-right: 28px;
+  }
+  .tituloPortfolio {
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+  .imagem {
+    width: 77%;
+  }
+  .focoImg {
+    width: 87.9%;
+  }
+  .subTitulo {
+    font-size: 64px;
+  }
+  .subTitulo2 {
+    font-size: 64px;
+  }
+  .subTexto {
+    font-size: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footerFundo {
+    height: 128px;
+  }
+  .footerTexto {
+    font-size: 18px;
+    padding-top: 18px;
+  }
+  .footerTexto2 {
+    font-size: 21px;
+  }
+} 
+
+/* Para computadores menores e tablets maiores */
+@media screen and (min-width: 1024px){
+
+  .introBox {
+    margin-top: 175px;
+    margin-bottom: 152px;
+    margin-left: 115px;
+    margin-right: 115px;
+  }
+  .introTitulo {
+    font-size: 65px;
+  }
+  .introImagem {
+    width: 70%;
+    margin-left: 75px;
+  }
+  .introTexto {
+    font-size: 23px;
+    margin-right: 55px;
+  }
+  .introTexto2 {
+    font-size: 23px;
+    margin-top: 11px;
+    margin-left: 75px;
+    margin-right: 65px;
+  }
+  span {
+    font-size: 44px;
+    margin-top: 25px;
+    margin-top: 30px;
+    margin-right: 1px;
+  }
+  .tituloPortfolio {
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+  .imagem {
+    width: 38%;
+    height: auto;
+  }
+  .focoImg {
+    width: 63%;
+  }
+  .subTitulo {
+    font-size: 74px;
+  }
+  .subTitulo2 {
+    font-size: 74px;
+  }
+  .subTexto {
+    font-size: 26px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+  .footerTexto {
+    font-size: 22px;
+  }
+  .footerTexto2 {
+    font-size: 24px;
+  }
+}
+
+/* Computadores */
+@media screen and (min-width: 1280px) { 
+  
+  .introBox {
+    padding-bottom: 22px;
+    margin-top: 175px;
+    margin-bottom: 210px;
+    margin-left: 170px;
+    margin-right: 170px;
+  }
+  .introTitulo {
+    font-size: 67px;
+  }
+  .introImagem {
+    width: 68%;
+    margin-left: 85px;
+  }
+  .introTexto {
+    font-size: 22px;
+    margin-right: 60px;
+  }
+  .introTexto2 {
+    font-size: 22px;
+    margin-top: 12px;
+    margin-left: 85px;
+    margin-right: 70px;
+  }
+  span {
+    font-size: 37px;
+    margin-top: 25px;
+    margin-right: 15px;
+  }
+  .tituloPortfolio {
+    font-size: 80px;
+  }
+  .imagem {
+    width: 35%;
+    height: auto;
+  }
+  .focoImg {
+    width: 53%;
+  }
+  .subTitulo {
+    font-size: 67px;
+  }
+  .subTitulo2 {
+    font-size: 67px;
+  }
+  .subTexto {
+    font-size: 20px;
+  }
+  .footerFundo {
+    height: 150px;
+  }
+  .footerTexto {
+    padding-top: 25px;
+    font-size: 19px;
+  }
+  .footerTexto2 {
+    padding-top: 13px;
+    font-size: 22px;
+  }
+}
+
+/* Computadores (Alta Definição) */
+@media screen and (min-width: 1600px) { 
+  
+  .introBox {
+    padding-top: 12px;
+    padding-bottom: 21px;
+    margin-top: 175px;
+    margin-bottom: 210px;
+    margin-left: 405px;
+    margin-right: 405px;
+  }
+  .introTitulo {
+    font-size: 65px;
+    margin-bottom: 14px;
+  }
+  .introImagem {
+    width: 67%;
+    margin-left: 72px;
+  }
+  .introTexto {
+    font-size: 21px;
+    margin-right: 57px;
+  }
+  .introTexto2 {
+    font-size: 21px;
+    margin-top: 15px;
+    margin-left: 72px;
+    margin-right: 50px;
+  }
+  span {
+    font-size: 37px;
+    margin-top: 28px;
+    margin-right: 15px;
+  }
+  .tituloPortfolio {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+  .imagem {
+    width: 34%;
+    height: auto;
+    margin: 20px;
+  }
+  .focoImg {
+    width: 35%;
+  }
+  .subTitulo {
+    font-size: 65px;
+  }
+  .subTitulo2 {
+    font-size: 65px;
+  }
+  .subTexto {
+    font-size: 21px;
+  }
+  .footerFundo {
+    height: 130px;
+  }
+  .footerTexto {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+  .footerTexto2 {
+    font-size: 20px;
+    padding-top: 16px;
+  }
+}
+
